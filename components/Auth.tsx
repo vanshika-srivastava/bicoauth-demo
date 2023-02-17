@@ -196,5 +196,4 @@ padding-top:25px;
 padding-bottom:25px;
 padding-left:10px;
 padding-right:10px;
-
 `

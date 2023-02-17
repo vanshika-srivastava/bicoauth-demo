@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@biconomy/core-types": "^1.0.0",
+    "@biconomy/smart-account": "^1.0.0",
+    "@biconomy/web3-auth": "^1.0.0",
+    "@emotion/css": "^11.10.5",
     "@next/font": "13.1.6",
     "@types/node": "18.13.0",
     "@types/react": "18.0.28",

@@ -9,6 +9,7 @@ const Index = () => {
     }
   );
 
+  
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>

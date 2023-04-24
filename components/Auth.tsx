@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import SocialLogin from '@biconomy/web3-auth';
-import { ChainId } from '@biconomy/core-types';
+import { ChainId } from "@biconomy/core-types";
 import { ethers } from 'ethers';
 import SmartAccount from '@biconomy/smart-account';
 import { css } from '@emotion/css';
@@ -140,7 +140,8 @@ margin-top: 10px;
 background-color:#CC5500;
 transition: all .25s;
 &:hover {
-background-color: purple ; 
+background-color: black ; 
+color:white;
 }
 font-size: 20px;
 font-family:'Helvetica';
@@ -196,4 +197,5 @@ padding-top:25px;
 padding-bottom:25px;
 padding-left:10px;
 padding-right:10px;
+
 `

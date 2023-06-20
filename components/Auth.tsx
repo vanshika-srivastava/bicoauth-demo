@@ -15,7 +15,7 @@ export default function Auth() {
   const [currentAddress, setCurrentAddress] = useState<string | null>(null);
 
   useEffect(() => {
-    let configureLogin;
+    let configureLogin: NodeJS.Timeout | undefined;
     if (interval) {
       configureLogin = setInterval(() => {
         if (!!sdkRef.current?.provider) {

@@ -157,7 +157,7 @@ const buttonWrapperStyle = css`
 `;
 
 const headerStyle = css`
-font-size: 40px;
+font-size: 32px;
 padding-left: 550px;
 color: black;
 font-family: 'Helvetica';
@@ -182,7 +182,7 @@ border-bottom: 3px solid black;
 margin-bottom: 10px;
 display: flex;
 padding-left : 30px;
-padding-bottom:20px;
+padding-bottom:60px;
 
 `
 

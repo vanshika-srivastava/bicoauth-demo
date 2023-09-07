@@ -12,7 +12,7 @@ export default function Auth() {
   const [interval, enableInterval] = useState(false);
   const sdkRef = useRef<SocialLogin | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
-  const [currentAddress, setCurrentAddress] = useState<string | null>(null);
+  // const [currentAddress, setCurrentAddress] = useState<string | null>(null);
 
   useEffect(() => {
     let configureLogin: NodeJS.Timeout | undefined;
@@ -66,6 +66,7 @@ export default function Auth() {
 
       await smartAccount.init();
       setSmartAccount(smartAccount);
+      console.log(smartAccount)
       setLoading(false);
     } catch (err) {
       console.log('error setting up smart account... ', err);
@@ -115,7 +116,7 @@ export default function Auth() {
         </div>
 
         <div className={buttonWrapperStyle}>
-        <button className={buttonStyle} onClick={() => window.open(`https://polygonscan.com/address/${smartAccount.address}`, '_blank')}>View Contract on PolygonScan</button>
+        <button className={buttonStyle} onClick={() => window.open(`https://mumbai.polygonscan.com/address/${smartAccount.address}`, '_blank')}>View Contract on PolygonScan</button>
         </div>
         <div className={buttonWrapperStyle}>
         <button className={buttonStyle} onClick={logout}>Logout</button>
